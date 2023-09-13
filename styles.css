@@ -31,21 +31,6 @@ blockquote {
 	color: var(--tweak-heading-medium-color-on-background);
 }
 
-body:not(#collection-6421f9d58637b9081b04e41a):not(
-		#collection-6422d138da36d247b552fb22
-	):not(#collection-6421f533ba1a622c98c52fec):not(
-		#collection-6421eefdba1a622c98c39f2a
-	)
-	.header-actions-action,
-body:not(#collection-6421f9d58637b9081b04e41a):not(
-		#collection-6422d138da36d247b552fb22
-	):not(#collection-6421f533ba1a622c98c52fec):not(
-		#collection-6421eefdba1a622c98c39f2a
-	)
-	.header-menu-cta {
-	display: none;
-}
-
 /* Menu/pricing */
 #collection-63d423f8bf8be34926e7e2c6 .sqs-block-content p {
 	margin-top: 0;
