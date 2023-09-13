@@ -13,3 +13,86 @@
 		<div class="fluidImageOverlay"></div>
 	</div>
 </div>
+
+<!-- Toggle Services Button -->
+<div class="sqs-block-button-container">
+	<button onclick="myFunction()"
+		class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+		data-initialized="true">
+		Book Now
+	</button>
+</div>
+
+<!-- Phorest Floating Book Now Widget -->
+<!-- Link: https://support.phorest.com/hc/en-us/articles/360016246960 -->
+<script src="https://booking-widget.phorestcdn.com/obwidget.bundle.js"></script>
+
+<script>
+	window.widget = new OBWidget('yourphorestsubdomain')
+</script>
+
+<!-- Phorest Embed Snippet Example -->
+<!-- Link: https://support.phorest.com/hc/en-us/articles/360017444299-How-to-embed-your-Online-Booking-page-as-an-iFrame-into-a-responsive-website -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		iframe testing
+	</title>
+	<meta name="description" />
+	<meta name="author" />
+	<style>
+		.iframe-container {
+			position: relative;
+			height: 800px;
+			overflow: hidden;
+		}
+
+		.iframe-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<header></header>
+	<section>
+		<div class="iframe-container">
+			<iframe src="https://phorest.com/book/salons/subdomain" width="100%" height="800" frameborder="0"></iframe>
+		</div>
+	</section>
+	<footer></footer>
+</body>
+
+</html>
+
+<!--  -->
+<!-- Phorest Web Builder Codes -->
+<!--  -->
+<!-- To be inserted in HTML Block: -->
+<section>
+	<div class="iframe-container">
+		<iframe src="https://phorest.com/book/salons/subdomain" width="100%" height="800" frameborder="0"></iframe>
+	</div>
+</section>
+
+<!-- To be inserted in Styling/Custom CSS section: -->
+<style>
+	.iframe-container {
+		position: relative;
+		height: 800px;
+		overflow: hidden;
+	}
+
+	.iframe-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
