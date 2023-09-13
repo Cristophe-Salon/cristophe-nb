@@ -21,20 +21,7 @@ blockquote {
 .sqs-background-enabled.sqs-block-accordion .accordion-item__description a {
 	color: var(--tweak-heading-medium-color-on-background);
 }
-/* home-1 header background */
-#collection-6421f9d58637b9081b04e41a .header-background-solid,
-#collection-6421f533ba1a622c98c52fec .header-background-solid,
-#collection-6421f533ba1a622c98c52fec .header-background-solid,
-#collection-6422d138da36d247b552fb22 .header-background-solid,
-#collection-6421eefdba1a622c98c39f2a .header-background-solid,
-#collection-64768294926f5801c114b302 .header-background-solid,
-#collection-6470ae8e11dfb258c32bfed8 .header-background-solid,
-#collection-64768294926f5801c114b302 .header-background-solid,
-#collection-6477de1c502bcb5be0c52221 .header-background-solid,
-#collection-649a0c0bf3f5ef05f48a69cf .header-background-solid,
-#collection-649a047d96670315095a7855 .header-background-solid {
-	background-color: transparent !important;
-}
+
 body:not(#collection-6421f9d58637b9081b04e41a):not(
 		#collection-6422d138da36d247b552fb22
 	):not(#collection-6421f533ba1a622c98c52fec):not(
