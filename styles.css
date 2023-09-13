@@ -17,6 +17,15 @@ blockquote {
 	padding: 1px 10px 1px 20px;
 	font-size: 2rem;
 }
+.link-custom {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-skip: auto;
+    text-decoration-skip-ink: auto;
+}
 /* accordion w/bk link */
 .sqs-background-enabled.sqs-block-accordion .accordion-item__description a {
 	color: var(--tweak-heading-medium-color-on-background);
