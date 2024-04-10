@@ -18,13 +18,13 @@ blockquote {
 	font-size: 2rem;
 }
 .link-custom {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: currentColor;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.2em;
-    text-decoration-skip: auto;
-    text-decoration-skip-ink: auto;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: currentColor;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+	text-decoration-skip: auto;
+	text-decoration-skip-ink: auto;
 }
 /* accordion w/bk link */
 .sqs-background-enabled.sqs-block-accordion .accordion-item__description a {
@@ -59,9 +59,56 @@ blockquote {
 .right {
 	right: 0;
 }
-/* Newsletter/input */
-.newsletter-form-field-wrapper .newsletter-form-field-element {
-	padding: 0.7em !important;
+.sqs-block-newsletter .newsletter-form-button {
+	background-color: #000 !important;
+	border: 1px solid #887f8f !important;
+	color: #887f8f !important;
+}
+/* MOBILE ONLY */
+@media only screen and (max-width: 480px) {
+	#footer-sections .sqs-html-content * {
+		text-align: center !important;
+	}
+	.newsletter-block .newsletter-form-wrapper--alignLeft .newsletter-form {
+		text-align: center;
+	}
+	.newsletter-block
+		.newsletter-form-wrapper--alignLeft
+		.newsletter-form-button-wrapper,
+	.newsletter-block
+		.newsletter-form-wrapper--alignLeft
+		.newsletter-form-button {
+		width: auto;
+		min-width: 18rem;
+	}
+}
+.newsletter-block .newsletter-form-field-element {
+	background: #000;
+	color: #fff;
+	border-bottom: 1px solid #908798;
+	padding: 0.5em !important;
+}
+
+.newsletter-block .newsletter-form-field-element:focus {
+	background: #000 !important;
+}
+.newsletter-block .newsletter-form-field-element::placeholder {
+	color: #887f8f;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 1296px) {
+	.newsletter-form-wrapper .newsletter-form .newsletter-form-field-element {
+		padding: 0.5em !important;
+		background: black;
+		font-family: futura-pt;
+		font-size: 16px !important;
+		font-style: normal;
+		font-weight: 400;
+		text-decoration-color: #908798;
+		border-bottom: 1px solid #908798;
+		color: #fff;
+	}
 }
 /* Archive block */
 @media screen and (min-width: 768px) {
