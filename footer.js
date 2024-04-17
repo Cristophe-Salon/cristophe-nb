@@ -208,4 +208,28 @@ window.addEventListener("load", function () {
 
 	// ADA: accordion items (.accordion-item__dropdown p) role="heading"
 	setAriaAttributes(".accordion-item__dropdown p", "role", "heading");
+
+	// ADA: talent pages figure role to none
+	setAriaAttributes("figure", "role", "none");
+
+	// ADA: talent pages change blog category switch to h3
+	const originalElement = document.querySelector(
+		"span.blog-item-category-wrapper"
+	);
+
+	if (originalElement) {
+		// Create a new h3 element
+		const newElement = document.createElement("h3");
+
+		// Copy content and attributes from the original element to the new one
+		newElement.innerHTML = originalElement.innerHTML;
+		for (let i = 0; i < originalElement.attributes.length; i++) {
+			const attr = originalElement.attributes[i];
+			newElement.setAttribute(attr.name, attr.value);
+		}
+		// Remove margin from the new element
+		newElement.style.margin = "0";
+		// Replace the original element with the new one
+		originalElement.parentNode.replaceChild(newElement, originalElement);
+	}
 });
