@@ -199,9 +199,9 @@ LINK: https://support.phorest.com/hc/en-us/articles/360017444299-How-to-embed-yo
 	align-items: center;
 	justify-content: center;
 }
-.summary-thumbnail-image {
+/* .summary-thumbnail-image {
 	filter: grayscale(1);
-}
+} */
 .summary-metadata-item a {
 	text-transform: uppercase;
 	font-size: 16px;
@@ -240,6 +240,13 @@ LINK: https://support.phorest.com/hc/en-us/articles/360017444299-How-to-embed-yo
 	background-color: #000;
 	color: #fff;
 	text-decoration: none;
+}
+/* talent bio pg top cats */
+.tweak-blog-item-show-categories
+	.blog-item-wrapper
+	.blog-meta-item--categories {
+	display: flex;
+	align-items: baseline;
 }
 /*
   .menu-block .menu-style-classic .menu-selector {
