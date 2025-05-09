@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+			}
+			img {
+				width: 100vw;
+				height: auto;
+			}
+			.page-section {
+				position: relative;
+				display: flex;
+				align-items: center;
+				box-sizing: border-box;
+			}
+			.santa-claus {
+				position: fixed; /* Fixed so it stays in view */
+				bottom: 30vh;
+				right: 100vw; /* Starts fully hidden on the left */
+				width: 220px;
+				height: auto;
+				max-width: unset;
+				transform: translateX(0); /* Start position */
+				transition: transform 0.1s ease; /* Smooth updates */
+			}
+			/* customizable snowflake styling */
+			.snowflake {
+				color: #fff;
+				font-size: 1em;
+				font-family: Arial;
+				text-shadow: 0 0 1px #000;
+			}
+
+			@-webkit-keyframes snowflakes-fall {
+				0% {
+					top: -10%;
+				}
+				100% {
+					top: 100%;
+				}
+			}
+			@-webkit-keyframes snowflakes-shake {
+				0% {
+					-webkit-transform: translateX(0px);
+					transform: translateX(0px);
+				}
+				50% {
+					-webkit-transform: translateX(80px);
+					transform: translateX(80px);
+				}
+				100% {
+					-webkit-transform: translateX(0px);
+					transform: translateX(0px);
+				}
+			}
+			@keyframes snowflakes-fall {
+				0% {
+					top: -10%;
+				}
+				100% {
+					top: 100%;
+				}
+			}
+			@keyframes snowflakes-shake {
+				0% {
+					transform: translateX(0px);
+				}
+				50% {
+					transform: translateX(80px);
+				}
+				100% {
+					transform: translateX(0px);
+				}
+			}
+			.snowflake {
+				position: fixed;
+				top: -10%;
+				z-index: 9999;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				cursor: default;
+				-webkit-animation-name: snowflakes-fall, snowflakes-shake;
+				-webkit-animation-duration: 10s, 3s;
+				-webkit-animation-timing-function: linear, ease-in-out;
+				-webkit-animation-iteration-count: infinite, infinite;
+				-webkit-animation-play-state: running, running;
+				animation-name: snowflakes-fall, snowflakes-shake;
+				animation-duration: 10s, 3s;
+				animation-timing-function: linear, ease-in-out;
+				animation-iteration-count: infinite, infinite;
+				animation-play-state: running, running;
+			}
+			.snowflake:nth-of-type(0) {
+				left: 1%;
+				-webkit-animation-delay: 0s, 0s;
+				animation-delay: 0s, 0s;
+			}
+			.snowflake:nth-of-type(1) {
+				left: 10%;
+				-webkit-animation-delay: 1s, 1s;
+				animation-delay: 1s, 1s;
+				font-size: 24px;
+			}
+			.snowflake:nth-of-type(2) {
+				left: 20%;
+				-webkit-animation-delay: 6s, 0.5s;
+				animation-delay: 6s, 0.5s;
+				font-size: 20px;
+			}
+			.snowflake:nth-of-type(3) {
+				left: 30%;
+				-webkit-animation-delay: 4s, 2s;
+				animation-delay: 4s, 2s;
+				font-size: 18px;
+			}
+			.snowflake:nth-of-type(4) {
+				left: 40%;
+				-webkit-animation-delay: 2s, 2s;
+				animation-delay: 2s, 2s;
+				font-size: 16px;
+			}
+			.snowflake:nth-of-type(5) {
+				left: 50%;
+				-webkit-animation-delay: 8s, 3s;
+				animation-delay: 8s, 3s;
+				font-size: 26px;
+			}
+			.snowflake:nth-of-type(6) {
+				left: 60%;
+				-webkit-animation-delay: 6s, 2s;
+				animation-delay: 6s, 2s;
+			}
+			.snowflake:nth-of-type(7) {
+				left: 70%;
+				-webkit-animation-delay: 2.5s, 1s;
+				animation-delay: 2.5s, 1s;
+			}
+			.snowflake:nth-of-type(8) {
+				left: 80%;
+				-webkit-animation-delay: 1s, 0s;
+				animation-delay: 1s, 0s;
+			}
+			.snowflake:nth-of-type(9) {
+				left: 90%;
+				-webkit-animation-delay: 3s, 1.5s;
+				animation-delay: 3s, 1.5s;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="page-section">
+			<img
+				src="https://i.ibb.co/zmVzkfq/Screenshot-2024-12-05-at-9-30-57-AM.png"
+			/>
+		</section>
+		<section class="page-section santa-section">
+			<img
+				src="https://i.ibb.co/5nKh94d/Screenshot-2024-12-05-at-9-55-48-AM.png"
+				alt=""
+			/>
+			<img
+				src="https://www.cristophenb.com/s/santa_claus-right-turn.svg"
+				alt="santa claus"
+				class="santa-claus"
+			/>
+		</section>
+		<section class="page-section">
+			<img
+				src="https://i.ibb.co/zmVzkfq/Screenshot-2024-12-05-at-9-30-57-AM.png"
+			/>
+		</section>
+		<div class="snowflakes" aria-hidden="true">
+			<div class="snowflake">❅</div>
+			<div class="snowflake">❅</div>
+			<div class="snowflake">❆</div>
+			<div class="snowflake">❄</div>
+			<div class="snowflake">❅</div>
+			<div class="snowflake">❆</div>
+			<div class="snowflake">❄</div>
+			<div class="snowflake">❅</div>
+			<div class="snowflake">❆</div>
+			<div class="snowflake">❄</div>
+		</div>
+<script>
+	// Select the Santa element and the section to observe
+	const santa = document.querySelector(".santa-claus");
+	const santaSection = document.querySelector(".santa-section");
+
+	// Variable to track whether Santa is currently paused
+	let isPaused = false;
+
+	// Function to update Santa's position based on scroll progress
+	function updateSantaPosition(entry) {
+		if (isPaused) return; // Do nothing if Santa is paused
+
+		const { top, height } = entry.boundingClientRect;
+		const viewportHeight = window.innerHeight;
+
+		// Calculate the visibility percentage of the section
+		let visiblePercentage = 1 - Math.abs(top) / height;
+
+		// Clamp the value between 0 and 1
+		visiblePercentage = Math.max(0, Math.min(1, visiblePercentage));
+
+		// Map the percentage to Santa's position (up to 105px max)
+		const santaPosition = visiblePercentage * 105;
+
+		// If Santa reaches the maximum position, pause for 1 second
+		if (santaPosition >= 105) {
+			isPaused = true; // Set paused state
+			santa.style.transform = `translateX(105px)`; // Fix position at 105px
+			setTimeout(() => {
+				isPaused = false; // Resume updates after the pause
+			}, 1000); // Pause duration in milliseconds
+		} else {
+			// Update Santa's position dynamically if not paused
+			santa.style.transform = `translateX(${santaPosition}px)`;
+		}
+	}
+
+	// Set up the IntersectionObserver
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					// Update position continuously as the user scrolls
+					updateSantaPosition(entry);
+				}
+			});
+		},
+		{
+			threshold: Array.from({ length: 101 }, (_, i) => i / 100), // Track every percent of visibility
+		}
+	);
+
+	// Observe the Santa section
+	observer.observe(santaSection);
+
+	// Update position on scroll for smoother effects
+	window.addEventListener("scroll", () => {
+		const entry = santaSection.getBoundingClientRect();
+		updateSantaPosition({ boundingClientRect: entry });
+	});
+</script>
+	</body>
+</html>

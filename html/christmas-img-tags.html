@@ -1,0 +1,31 @@
+<img src="https://www.cristophenb.com/s/santa_hat.svg" alt="santa hat" class="santa-hat">
+<img src="https://www.cristophenb.com/s/holly.svg" alt="holly" class="holly">
+<img src="https://www.cristophenb.com/s/mistletoe.svg" alt="mistletoe" class="mistletoe">
+<img src="https://www.cristophenb.com/s/santa_claus.svg" alt="santa claus" class="santa-claus">
+<img src="https://www.cristophenb.com/s/christmas_ball_red.svg" alt="christmas ball red" class="christmas-ball-red">
+<style>
+#fixed-image:after {
+    content: '';
+    background-image: url(https://www.cristophenb.com/s/mistletoe.svg);
+    position: absolute;
+    width: 230px;
+    height: 220px;
+    top: -70px;
+    left: -70px;
+    z-index: 9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    /* background-color: red; */
+    transform: rotate(134deg);
+}
+#fixed-image {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #00ffff45;
+    left: 0;
+    top: 0;
+    /* transform: translateX(-4vw); */
+}
+</style>
